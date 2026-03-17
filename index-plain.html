@@ -20,65 +20,94 @@
       a { color: #0b57d0; }
     </style>
   </head>
-  <body>
-    <h1>Privacy Policy for Podisodic</h1>
-    <p><strong>Effective date:</strong> March 2, 2026</p>
+ <body>
+  <main>
+    <article>
+      <h1>Podisodic Privacy Policy</h1>
+      <p class="effective">Effective date: March 6, 2026</p>
 
-    <p>
-      This Privacy Policy explains how Podisodic collects, uses, and shares information.
-    </p>
+      <p class="links">
+        <a href="/podisodic-privacy/terms-of-service/">Terms of Service</a>
+        ·
+        <a href="mailto:help.episode@gmail.com">Contact</a>
+      </p>
 
-    <h2>Information We Collect</h2>
-    <ul>
-      <li>App usage events (for example, screens viewed and actions taken)</li>
-      <li>Device and app metadata (for example, app version, platform, diagnostic context)</li>
-      <li>Performance and stability information (for example, error and crash context)</li>
-    </ul>
+      <p>Podisodic collects limited analytics and user-submitted feedback data to improve app quality, reliability, and user experience.</p>
 
-    <h2>How We Use Information</h2>
-    <ul>
-      <li>Improve app features and user experience</li>
-      <li>Diagnose bugs and technical issues</li>
-      <li>Monitor performance and reliability</li>
-    </ul>
+      <h2>Information We Collect</h2>
+      <ul>
+        <li>App activity analytics (for example, screens viewed and interaction events)</li>
+        <li>Podcast interaction metadata sourced from public RSS feeds (for example, podcast title, podcast author, and feed URL when subscribing or unsubscribing)</li>
+        <li>Technical metadata for analytics (for example, app version, platform, and device or app identifiers provided by analytics SDKs)</li>
+        <li>User-submitted feedback and feature request text when sent through in-app forms</li>
+      </ul>
 
-    <h2>Analytics Provider</h2>
-    <p>
-      We use PostHog to process analytics data on our behalf.
-    </p>
+      <h2>Information We Do Not Intentionally Collect in Analytics</h2>
+      <p>We do not intentionally collect sensitive personal data (such as email, phone, passwords, or auth tokens) in analytics events.</p>
 
-    <h2>Data Sharing</h2>
-    <p>
-      We do not sell personal data. We may share information only with service providers
-      necessary to operate and improve the app.
-    </p>
+      <h2>How We Use Information</h2>
+      <ul>
+        <li>To understand feature usage and improve product decisions</li>
+        <li>To diagnose bugs and improve reliability and performance</li>
+        <li>To monitor app stability and lifecycle behavior</li>
+        <li>To review user feedback, prioritize feature requests, and respond to product issues</li>
+      </ul>
 
-    <h2>Data Retention</h2>
-    <p>
-      We retain analytics information for as long as necessary to support product improvement,
-      debugging, and operations.
-    </p>
+      <h2>RSS Feed Usage</h2>
+      <p>Podisodic is a podcast player app that operates by accessing publicly available RSS feeds published by podcast creators and their hosting providers. The following describes how RSS feeds are used within the app:</p>
+      <ul>
+        <li>Podcast discovery is powered in part by the Podcast Index API (podcastindex.org), an open podcast directory. When you search for or browse podcasts, Podisodic may query the Podcast Index API to retrieve podcast metadata and RSS feed URLs. This API communication is governed by the <a href="https://api.podcastindex.org/tos_v1.0.html">Podcast Index Terms of Service</a>.</li>
+        <li>Once a podcast’s RSS feed URL is identified, Podisodic fetches the RSS feed directly from its original, publicly addressable source URL. RSS feeds are not downloaded, copied, or stored on Podisodic’s servers.</li>
+        <li>Audio content is streamed directly from the original hosting provider’s servers (such as Libsyn, Buzzsprout, or Podbean) using the audio file URLs contained within each RSS feed. Podisodic does not cache, re-host, or reproduce audio files.</li>
+        <li>When a user subscribes to a podcast, Podisodic stores the RSS feed URL on the user’s device and periodically polls it directly from its original source to surface new episodes automatically. No account creation with the original publisher is required.</li>
+        <li>Podcast metadata retrieved from RSS feeds, such as episode titles, descriptions, artwork, and publish dates, is used solely to display content to the user within the app.</li>
+        <li>Podisodic does not claim any ownership over podcast content accessed via RSS feeds. All content remains the property of the respective creators and hosting providers.</li>
+      </ul>
 
-    <h2>Your Choices</h2>
-    <p>
-      To request deletion of data associated with your usage, contact:
-      <a href="mailto:help.episode@gmail.com">help.episode@gmail.com</a>
-    </p>
+      <p>RSS feeds are a publicly accessible, standardized distribution format designed to allow podcast player apps to discover and stream content on behalf of listeners. Accessing public RSS feeds is standard, accepted practice across the podcast industry and is consistent with the intent of podcast creators who publish via this format.</p>
 
-    <h2>Children's Privacy</h2>
-    <p>
-      Podisodic is not directed to children under 13.
-    </p>
+      <h2>Content &amp; Copyright</h2>
+      <p>Podisodic respects the intellectual property rights of podcast creators and content owners. The following describes how Podisodic approaches content and copyright:</p>
+      <ul>
+        <li>All podcast content accessible through Podisodic is owned by the respective creators, publishers, and/or their hosting providers. Podisodic makes no claim of ownership over any third-party content.</li>
+        <li>Podisodic operates solely as a podcast player that facilitates user access to publicly available content via open RSS feeds. It does not reproduce, redistribute, or create derivative works from any podcast content.</li>
+        <li>Podisodic complies with the <a href="https://www.copyright.gov/dmca/">Digital Millennium Copyright Act (DMCA)</a>. If you believe that content accessible through Podisodic infringes your copyright, you may submit a takedown notice to us at help.episode@gmail.com.</li>
+        <li>Users are responsible for ensuring their personal use of content accessed through the app complies with applicable laws and the terms of the original content providers.</li>
+      </ul>
 
-    <h2>Changes to This Policy</h2>
-    <p>
-      We may update this Privacy Policy. Updates will be posted on this page with an updated effective date.
-    </p>
+      <h2>Third-Party Services</h2>
+      <p>Podisodic uses the following third-party services to operate the app:</p>
+      <ul>
+        <li>PostHog — analytics processor. App activity and interaction events are sent to PostHog over encrypted connections (HTTPS) to help us understand feature usage and improve the app.</li>
+        <li>Podcast Index (podcastindex.org) — open podcast directory API. Used to power podcast search and discovery within the app. Queries include search terms and may include general device or session identifiers as required by the API. Podcast Index’s use of this data is governed by their own <a href="https://github.com/Podcastindex-org/legal/blob/main/PrivacyPolicy.md">Privacy Policy</a> and <a href="https://api.podcastindex.org/tos_v1.0.html">Terms of Service</a>.</li>
+      </ul>
 
-    <h2>Contact</h2>
-    <p>
-      If you have questions about this policy, contact:
-      <a href="mailto:help.episode@gmail.com">help.episode@gmail.com</a>
-    </p>
-  </body>
+      <p>We do not use any third-party advertising SDKs or sell data to third parties.</p>
+
+      <h2>Data Sharing</h2>
+      <p>We do not sell personal data. Analytics and user-submitted feedback data are processed by our service provider(s) to operate and improve the app, and are not used for advertising. We do not access, use, or aggregate proprietary analytics data from third-party podcast hosting platforms or directories (such as Apple Podcasts, Spotify, or Podcast Index). Podisodic collects only its own first-party analytics through PostHog.</p>
+
+      <h2>Data Retention</h2>
+      <p>We retain analytics and user-submitted feedback data only as long as needed for product improvement, debugging, and operational purposes.</p>
+
+      <h2>Your Choices</h2>
+      <p>If you want to request deletion of data associated with your usage, contact us at  <a href="mailto:help.episode@gmail.com">help.episode@gmail.com.</a></p>
+
+      <h2>Children’s Privacy</h2>
+      <p>Podisodic is not directed to children under 13.</p>
+
+      <h2>Changes to This Policy</h2>
+      <p>We may update this policy from time to time. Any changes will be posted on this page with an updated effective date.</p>
+
+      <h2>Contact</h2>
+      <p>If you have questions, contact  <a href="mailto:help.episode@gmail.com">help.episode@gmail.com.</a></p>
+
+      <p class="foot">
+        <a href="/podisodic-privacy/terms-of-service/">Terms of Service</a>
+        ·
+        <a href="mailto:help.episode@gmail.com">Contact</a>
+      </p>
+    </article>
+  </main>
+</body>
 </html>
