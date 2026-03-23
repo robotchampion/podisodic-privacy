@@ -1,274 +1,326 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Podisodic Terms of Service</title>
-  <style>
-    :root {
-      color-scheme: dark;
-      --bg: #0f0f14;
-      --panel: #171821;
-      --panel-2: #1d1f2a;
-      --text: #f4f4f6;
-      --muted: #b7b8c2;
-      --border: rgba(255, 255, 255, 0.1);
-      --accent: #8fd3ff;
-      --accent-2: #f59adf;
-      --link: #9ad7ff;
-      --shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      min-height: 100vh;
-      background:
-        radial-gradient(circle at top left, rgba(143, 211, 255, 0.18), transparent 32%),
-        radial-gradient(circle at top right, rgba(245, 154, 223, 0.16), transparent 28%),
-        linear-gradient(180deg, #101118 0%, #0c0d12 100%);
-      color: var(--text);
-      font: 16px/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    }
-
-    main {
-      max-width: 860px;
-      margin: 0 auto;
-      padding: 56px 20px 72px;
-    }
-
-    article {
-      background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.015));
-      border: 1px solid var(--border);
-      border-radius: 24px;
-      padding: 36px 28px;
-      box-shadow: var(--shadow);
-      backdrop-filter: blur(10px);
-    }
-
-    h1 {
-      margin: 0 0 8px;
-      font-size: 2.25rem;
-      line-height: 1.15;
-      letter-spacing: -0.03em;
-    }
-
-    h2 {
-      margin: 2rem 0 0.75rem;
-      font-size: 1.1rem;
-      letter-spacing: -0.01em;
-    }
-
-    h3 {
-      margin: 1.25rem 0 0.5rem;
-      font-size: 1rem;
-      color: var(--text);
-    }
-
-    p {
-      margin: 0.8rem 0;
-      color: var(--text);
-    }
-
-    ul {
-      margin: 0.75rem 0 0.75rem 1.25rem;
-      padding: 0;
-    }
-
-    li {
-      margin: 0.5rem 0;
-      color: var(--text);
-    }
-
-    .effective {
-      margin: 0 0 1rem;
-      color: var(--muted);
-    }
-
-    .links,
-    .foot,
-    .note {
-      color: var(--muted);
-      font-size: 0.95rem;
-    }
-
-    .links {
-      margin: 0 0 1.25rem;
-    }
-
-    .foot {
-      margin-top: 2rem;
-      padding-top: 1rem;
-      border-top: 1px solid var(--border);
-    }
-
-    .dmca-box {
-      margin: 1rem 0;
-      padding: 1rem 1.1rem;
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      background: rgba(255, 255, 255, 0.025);
-    }
-
-    a {
-      color: var(--link);
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    strong {
-      color: var(--text);
-    }
-
-    @media (max-width: 640px) {
-      main {
-        padding: 32px 14px 48px;
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Podisodic Terms of Service</title>
+    <style>
+      :root {
+        --bg: #0f0f16;
+        --panel: #171726;
+        --text: #f4f4fb;
+        --muted: #bfc0d8;
+        --cyan: #7ef0ff;
+        --pink: #ff6ec7;
+        --border: #2f324d;
       }
-
-      article {
-        padding: 24px 18px;
-        border-radius: 18px;
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        background: radial-gradient(circle at top, #1d1d31 0%, var(--bg) 55%);
+        color: var(--text);
+        line-height: 1.65;
       }
-
+      .wrap {
+        max-width: 860px;
+        margin: 0 auto;
+        padding: 40px 20px 80px;
+      }
+      .card {
+        background: linear-gradient(160deg, #191a2d, var(--panel));
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        padding: 28px;
+        box-shadow: 0 10px 30px rgba(0,0,0,.35);
+      }
       h1 {
-        font-size: 1.8rem;
+        margin: 0 0 10px;
+        font-size: 2rem;
+        line-height: 1.2;
+        letter-spacing: .2px;
       }
-    }
-  </style>
-</head>
-<body>
-  <main>
-    <article>
-      <h1>Podisodic Terms of Service</h1>
-      <p class="effective">Effective date: March 6, 2026</p>
+      h2 {
+        margin: 24px 0 8px;
+        font-size: 1.1rem;
+      }
+      h3 {
+        margin: 18px 0 8px;
+        font-size: 1rem;
+      }
+      .accent {
+        background: linear-gradient(90deg, var(--cyan), var(--pink));
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+      p, li { color: var(--muted); }
+      ul { margin: 8px 0 0 18px; }
+      a { color: var(--cyan); }
+      .meta { margin: 0 0 18px; color: #d9daea; }
+      .links {
+        margin: 14px 0 22px;
+        color: #d9daea;
+      }
+      .links a {
+        color: var(--cyan);
+        text-decoration: none;
+      }
+      .links a:hover { text-decoration: underline; }
+      .foot { margin-top: 26px; font-size: .95rem; }
+      .badge {
+        display: inline-block;
+        padding: 4px 10px;
+        border-radius: 999px;
+        border: 1px solid var(--border);
+        font-size: .85rem;
+        color: #d9daea;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="wrap">
+      <section class="card">
+        <span class="badge">Terms of Service</span>
+        <h1><span class="accent">Podisodic</span> Terms of Service</h1>
+        <p class="meta"><strong>Effective date:</strong> March 23, 2026</p>
+        <p class="links">
+          <a href="/podisodic-privacy/">Privacy Policy</a>
+          ·
+          <a href="mailto:help.podisodic@gmail.com">Contact</a>
+        </p>
 
-      <p class="links">
-        <a href="/podisodic-privacy/">Privacy Policy</a>
-        ·
-        <a href="mailto:help.episode@gmail.com">Contact</a>
-      </p>
+        <h2>1. Acceptance of Terms</h2>
+        <p>
+          By downloading, installing, or using the Podisodic app (“the App”),
+          you agree to be bound by these Terms of Service (“Terms”). If you do not
+          agree to these Terms, do not use the App.
+        </p>
+        <p>
+          These Terms apply to all users of the App, regardless of the device or
+          platform used (iOS or Android) or the country from which you access the App.
+        </p>
 
-      <h2>1. Acceptance of Terms</h2>
-      <p>By downloading, installing, or using the Podisodic app (“the App”), you agree to be bound by these Terms of Service (“Terms”). If you do not agree to these Terms, do not use the App.</p>
-      <p>These Terms apply to all users of the App, regardless of the device or platform used (iOS or Android) or the country from which you access the App.</p>
+        <h2>2. The Service</h2>
+        <p>
+          Podisodic is a free podcast player app that allows users to discover,
+          subscribe to, and listen to podcasts. The App operates by:
+        </p>
+        <ul>
+          <li>Accessing publicly available RSS feeds published by podcast creators and their hosting providers.</li>
+          <li>Using the Podcast Index API (podcastindex.org) to power podcast search and discovery.</li>
+          <li>Streaming audio content directly from the original hosting provider’s servers. Podisodic does not re-host podcast audio on its own servers, but the app may cache metadata and may download episode audio to a user’s device for offline playback when the user chooses to do so.</li>
+        </ul>
+        <p>
+          Podisodic is provided free of charge. We reserve the right to modify,
+          suspend, or discontinue the App or any part of it at any time, with or
+          without notice.
+        </p>
 
-      <h2>2. The Service</h2>
-      <p>Podisodic is a free podcast player app that allows users to discover, subscribe to, and listen to podcasts. The App operates by:</p>
-      <ul>
-        <li>Accessing publicly available RSS feeds published by podcast creators and their hosting providers.</li>
-        <li>Using the Podcast Index API (podcastindex.org) to power podcast search and discovery.</li>
-        <li>Streaming audio content directly from the original hosting provider’s servers. Podisodic does not host, store, cache, or re-host any podcast audio files.</li>
-      </ul>
-      <p>Podisodic is provided free of charge. We reserve the right to modify, suspend, or discontinue the App or any part of it at any time, with or without notice.</p>
+        <h2>3. Eligibility</h2>
+        <p>
+          You must be at least 13 years of age to use the App. By using the App,
+          you represent and warrant that you meet this requirement. If you are
+          under 18, you represent that you have your parent or guardian’s
+          permission to use the App.
+        </p>
 
-      <h2>3. Eligibility</h2>
-      <p>You must be at least 13 years of age to use the App. By using the App, you represent and warrant that you meet this requirement. If you are under 18, you represent that you have your parent or guardian’s permission to use the App.</p>
+        <h2>4. RSS Feeds &amp; Third-Party Content</h2>
+        <h3>4.1 Open RSS Feeds</h3>
+        <p>
+          The App accesses publicly available RSS feeds as a standard podcast
+          player. All podcast content accessible through the App is owned by the
+          respective creators, publishers, and/or their hosting providers.
+          Podisodic makes no claim of ownership over any third-party content.
+        </p>
+        <h3>4.2 No Endorsement</h3>
+        <p>
+          Podisodic does not endorse, curate, verify, or take responsibility for
+          any podcast content accessible through the App. The presence of a
+          podcast in the App does not constitute an endorsement of its content,
+          accuracy, or views.
+        </p>
+        <h3>4.3 Content Availability</h3>
+        <p>
+          Podcast availability depends on the original creator or hosting
+          provider maintaining their RSS feed. Podisodic does not guarantee that
+          any particular podcast will be available at any given time. We are not
+          responsible for content that is removed, altered, or becomes
+          unavailable at the source.
+        </p>
+        <h3>4.4 Your Responsibility</h3>
+        <p>
+          You are responsible for ensuring your personal use of content accessed
+          through the App complies with applicable laws and the terms of the
+          original content providers.
+        </p>
+        <h3>4.5 Offline Downloads</h3>
+        <p>
+          Where the App offers offline download functionality, downloaded
+          episodes are stored on your device solely for personal, offline
+          listening. Downloaded content may not be redistributed, shared, or
+          reproduced in any form. Downloads are made directly from the original
+          hosting provider’s servers. Podisodic does not store or cache audio
+          files on its own servers at any point in this process.
+        </p>
 
-      <h2>4. RSS Feeds &amp; Third-Party Content</h2>
+        <h2>5. Intellectual Property</h2>
+        <h3>5.1 Podisodic IP</h3>
+        <p>
+          The App, including its design, interface, features, and original
+          content, is owned by Podisodic and protected by applicable intellectual
+          property laws. You may not copy, modify, distribute, sell, or lease any
+          part of the App without our express written permission.
+        </p>
+        <h3>5.2 Third-Party Content</h3>
+        <p>
+          All podcast content accessible through the App is owned by the
+          respective creators and publishers. Nothing in these Terms grants you
+          any rights in third-party content beyond what is already permitted by
+          the creator’s publication of their content via public RSS feed.
+        </p>
 
-      <h3>4.1 Open RSS Feeds</h3>
-      <p>The App accesses publicly available RSS feeds as a standard podcast player. All podcast content accessible through the App is owned by the respective creators, publishers, and/or their hosting providers. Podisodic makes no claim of ownership over any third-party content.</p>
-
-      <h3>4.2 No Endorsement</h3>
-      <p>Podisodic does not endorse, curate, verify, or take responsibility for any podcast content accessible through the App. The presence of a podcast in the App does not constitute an endorsement of its content, accuracy, or views.</p>
-
-      <h3>4.3 Content Availability</h3>
-      <p>Podcast availability depends on the original creator or hosting provider maintaining their RSS feed. Podisodic does not guarantee that any particular podcast will be available at any given time. We are not responsible for content that is removed, altered, or becomes unavailable at the source.</p>
-
-      <h3>4.4 Offline Downloads</h3>
-      <p>Where the App offers offline download functionality, downloaded episodes are stored on your device solely for personal, offline listening. Downloaded content may not be redistributed, shared, or reproduced in any form. Downloads are made directly from the original hosting provider’s servers. Podisodic does not store or cache audio files on its own servers at any point in this process.</p>
-
-      <h3>4.5 Your Responsibility</h3>
-      <p>You are responsible for ensuring your personal use of content accessed through the App complies with applicable laws and the terms of the original content providers.</p>
-
-      <h2>5. Intellectual Property</h2>
-
-      <h3>5.1 Podisodic IP</h3>
-      <p>The App, including its design, interface, features, and original content, is owned by Podisodic and protected by applicable intellectual property laws. You may not copy, modify, distribute, sell, or lease any part of the App without our express written permission.</p>
-
-      <h3>5.2 Third-Party Content</h3>
-      <p>All podcast content accessible through the App is owned by the respective creators and publishers. Nothing in these Terms grants you any rights in third-party content beyond what is already permitted by the creator’s publication of their content via public RSS feed.</p>
-
-      <h2>6. Copyright &amp; DMCA</h2>
-
-      <h3>6.1 DMCA Compliance</h3>
-      <p>Podisodic respects intellectual property rights and complies with the Digital Millennium Copyright Act (DMCA). We respond promptly to valid takedown notices submitted in accordance with the DMCA.</p>
-
-      <h3>6.2 Designated DMCA Agent</h3>
-      <p>If you believe that content accessible through the App infringes your copyright, you may submit a written takedown notice to our designated DMCA agent at:</p>
-
-      <div class="dmca-box">
+        <h2>6. Copyright &amp; DMCA</h2>
+        <h3>6.1 DMCA Compliance</h3>
+        <p>
+          Podisodic respects intellectual property rights and complies with the
+          Digital Millennium Copyright Act (DMCA). We respond promptly to valid
+          takedown notices submitted in accordance with the DMCA.
+        </p>
+        <h3>6.2 Designated DMCA Agent</h3>
+        <p>
+          If you believe that content accessible through the App infringes your
+          copyright, you may submit a written takedown notice to our designated
+          DMCA agent at:
+        </p>
         <p>
           DMCA Agent: Steven Mandzik<br />
-          Email: <a href="mailto:help.episode@gmail.com">help.episode@gmail.com</a>
+          Email: <a href="mailto:help.podisodic@gmail.com">help.podisodic@gmail.com</a>
         </p>
-      </div>
+        <p>
+          To be valid, your takedown notice must include: (a) a description of
+          the copyrighted work you claim has been infringed; (b) identification
+          of the infringing content and its location in the App; (c) your contact
+          information; (d) a statement of good faith belief that the use is not
+          authorized; (e) a statement under penalty of perjury that the
+          information is accurate and you are authorized to act on behalf of the
+          copyright owner; and (f) your physical or electronic signature.
+        </p>
+        <h3>6.3 Counter-Notice</h3>
+        <p>
+          If you believe your content was removed in error, you may submit a
+          counter-notice to the DMCA agent above. Upon receipt of a valid
+          counter-notice, we may restore the content after 10 to 14 business days
+          unless the complaining party seeks a court order.
+        </p>
+        <h3>6.4 Repeat Infringers</h3>
+        <p>
+          Podisodic reserves the right to terminate or restrict access for users
+          who are found to be repeat infringers.
+        </p>
 
-      <p>To be valid, your takedown notice must include: (a) a description of the copyrighted work you claim has been infringed; (b) identification of the infringing content and its location in the App; (c) your contact information; (d) a statement of good faith belief that the use is not authorized; (e) a statement under penalty of perjury that the information is accurate and you are authorized to act on behalf of the copyright owner; and (f) your physical or electronic signature.</p>
+        <h2>7. Prohibited Uses</h2>
+        <p>You agree not to use the App to:</p>
+        <ul>
+          <li>Violate any applicable local, national, or international law or regulation.</li>
+          <li>Reproduce, redistribute, or create derivative works from podcast content accessed through the App without authorization from the rights holder.</li>
+          <li>Use the App for any commercial purpose without our express written consent.</li>
+          <li>Attempt to gain unauthorized access to any part of the App or its related systems.</li>
+          <li>Scrape, crawl, or extract data from the App by automated means.</li>
+          <li>Interfere with or disrupt the integrity or performance of the App.</li>
+        </ul>
 
-      <h3>6.3 Counter-Notice</h3>
-      <p>If you believe your content was removed in error, you may submit a counter-notice to the DMCA agent above. Upon receipt of a valid counter-notice, we may restore the content after 10 to 14 business days unless the complaining party seeks a court order.</p>
+        <h2>8. Disclaimers</h2>
+        <p>
+          The App is provided “as is” and “as available” without warranties of
+          any kind, either express or implied. Podisodic does not warrant that
+          the App will be uninterrupted, error-free, or free of viruses or other
+          harmful components.
+        </p>
+        <p>
+          Podisodic is not responsible for the content, accuracy, or legality of
+          any podcast accessible through the App. We do not pre-screen or monitor
+          third-party content.
+        </p>
 
-      <h3>6.4 Repeat Infringers</h3>
-      <p>Podisodic reserves the right to terminate or restrict access for users who are found to be repeat infringers.</p>
+        <h2>9. Limitation of Liability</h2>
+        <p>
+          To the fullest extent permitted by law, Podisodic and its owners,
+          employees, and affiliates shall not be liable for any indirect,
+          incidental, special, consequential, or punitive damages arising from
+          your use of or inability to use the App, even if advised of the
+          possibility of such damages.
+        </p>
+        <p>
+          In jurisdictions that do not allow the exclusion of certain warranties
+          or limitation of liability, our liability is limited to the greatest
+          extent permitted by applicable law.
+        </p>
 
-      <h2>7. Prohibited Uses</h2>
-      <p>You agree not to use the App to:</p>
-      <ul>
-        <li>Violate any applicable local, national, or international law or regulation.</li>
-        <li>Reproduce, redistribute, or create derivative works from podcast content accessed through the App without authorization from the rights holder.</li>
-        <li>Use the App for any commercial purpose without our express written consent.</li>
-        <li>Attempt to gain unauthorized access to any part of the App or its related systems.</li>
-        <li>Scrape, crawl, or extract data from the App by automated means.</li>
-        <li>Interfere with or disrupt the integrity or performance of the App.</li>
-        <li>Download podcast episodes for any purpose other than personal, offline listening.</li>
-        <li>Redistribute, share, or reproduce any downloaded content in any form.</li>
-      </ul>
+        <h2>10. Third-Party Services</h2>
+        <p>The App integrates with third-party services including:</p>
+        <ul>
+          <li>Podcast Index — open podcast directory API. Use of the Podcast Index API is governed by the Podcast Index Terms of Service and Privacy Policy.</li>
+          <li>PostHog — analytics processor used to collect app usage data as described in our Privacy Policy.</li>
+          <li>Firebase Cloud Messaging — used to deliver push notifications.</li>
+          <li>Supabase — used for backend storage and sync related to notification features and feedback submissions.</li>
+          <li>Resend — used to forward feedback and feature request emails to support.</li>
+          <li>Apple App Store and Google Play Store — your use of the App is also subject to the terms of the platform through which you downloaded it.</li>
+        </ul>
+        <p>
+          Podisodic is not responsible for the content, policies, or practices of
+          any third-party service.
+        </p>
 
-      <h2>8. Disclaimers</h2>
-      <p>The App is provided “as is” and “as available” without warranties of any kind, either express or implied. Podisodic does not warrant that the App will be uninterrupted, error-free, or free of viruses or other harmful components.</p>
-      <p>Podisodic is not responsible for the content, accuracy, or legality of any podcast accessible through the App. We do not pre-screen or monitor third-party content.</p>
+        <h2>11. Privacy</h2>
+        <p>
+          Your use of the App is also governed by our Privacy Policy, which is
+          incorporated into these Terms by reference. By using the App, you
+          consent to the data practices described in the Privacy Policy.
+        </p>
 
-      <h2>9. Limitation of Liability</h2>
-      <p>To the fullest extent permitted by law, Podisodic and its owners, employees, and affiliates shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of or inability to use the App, even if advised of the possibility of such damages.</p>
-      <p>In jurisdictions that do not allow the exclusion of certain warranties or limitation of liability, our liability is limited to the greatest extent permitted by applicable law.</p>
+        <h2>12. Local Downloads And Device Storage</h2>
+        <p>
+          Podisodic may store certain information locally on your device,
+          including subscriptions, playback history, resume positions, cached
+          podcast metadata, playlists, and downloaded episode audio and file
+          paths. You are responsible for managing content stored on your device,
+          including deleting downloads when desired.
+        </p>
 
-      <h2>10. Third-Party Services</h2>
-      <p>The App integrates with third-party services including:</p>
-      <ul>
-        <li>Podcast Index — open podcast directory API. Use of the Podcast Index API is governed by the Podcast Index Terms of Service and Privacy Policy.</li>
-        <li>PostHog — analytics processor used to collect app usage data as described in our Privacy Policy.</li>
-        <li>Apple App Store and Google Play Store — your use of the App is also subject to the terms of the platform through which you downloaded it.</li>
-      </ul>
-      <p>Podisodic is not responsible for the content, policies, or practices of any third-party service.</p>
+        <h2>13. Governing Law</h2>
+        <p>
+          These Terms are governed by and construed in accordance with the laws
+          of the United States, without regard to conflict of law principles. For
+          users outside the United States, local laws may also apply and nothing
+          in these Terms limits your statutory rights under applicable local law.
+        </p>
+        <p>
+          Any disputes arising from these Terms or your use of the App shall be
+          resolved through binding arbitration or in the courts of competent
+          jurisdiction in the United States, as applicable.
+        </p>
 
-      <h2>11. Privacy</h2>
-      <p>Your use of the App is also governed by our Privacy Policy, which is incorporated into these Terms by reference. By using the App, you consent to the data practices described in the Privacy Policy.</p>
+        <h2>14. Changes to These Terms</h2>
+        <p>
+          We may update these Terms from time to time. When we do, we will update
+          the effective date at the top of this page. Your continued use of the
+          App after changes are posted constitutes your acceptance of the updated
+          Terms. We encourage you to review these Terms periodically.
+        </p>
 
-      <h2>12. Governing Law</h2>
-      <p>These Terms are governed by and construed in accordance with the laws of the United States, without regard to conflict of law principles. For users outside the United States, local laws may also apply and nothing in these Terms limits your statutory rights under applicable local law.</p>
-      <p>Any disputes arising from these Terms or your use of the App shall be resolved through binding arbitration or in the courts of competent jurisdiction in the United States, as applicable.</p>
+        <h2>15. Contact</h2>
+        <p>
+          If you have questions about these Terms, contact us at
+          <a href="mailto:help.podisodic@gmail.com">help.podisodic@gmail.com</a>.
+        </p>
 
-      <h2>13. Changes to These Terms</h2>
-      <p>We may update these Terms from time to time. When we do, we will update the effective date at the top of this page. Your continued use of the App after changes are posted constitutes your acceptance of the updated Terms. We encourage you to review these Terms periodically.</p>
-
-      <h2>14. Contact</h2>
-      <p>If you have questions about these Terms, contact us at help.episode@gmail.com.</p>
-
-      <p class="note">Note: This Terms of Service document does not constitute legal advice. Podisodic recommends consulting a qualified attorney to review these Terms before publishing. DMCA agent fields marked with placeholders should be completed after completing DMCA agent registration at copyright.gov.</p>
-
-      <p class="foot">
-        <a href="/podisodic-privacy/">Privacy Policy</a>
-        ·
-        <a href="mailto:help.episode@gmail.com">Contact</a>
-      </p>
-    </article>
-  </main>
-</body>
+        <p class="foot">
+          <a href="/podisodic-privacy/">Privacy Policy</a>
+          ·
+          <a href="mailto:help.podisodic@gmail.com">Contact</a>
+        </p>
+      </section>
+    </main>
+  </body>
 </html>
