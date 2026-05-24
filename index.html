@@ -79,7 +79,7 @@
       <section class="card">
         <span class="badge">Privacy Policy</span>
         <h1><span class="accent">Podisodic</span> Privacy Policy</h1>
-        <p class="meta"><strong>Effective date:</strong> March 23, 2026</p>
+        <p class="meta"><strong>Effective date:</strong> May 16, 2026</p>
         <p class="links">
           <a href="/podisodic-privacy/terms-of-service/">Terms of Service</a>
           ·
@@ -88,34 +88,41 @@
 
         <p>
           Podisodic collects and processes limited information to operate the
-          app, deliver features such as notifications and feedback handling, and
-          improve quality, reliability, and user experience.
+          app, deliver features such as playback, discovery, notifications,
+          feedback handling, and optional backend sync, and improve quality,
+          reliability, performance, and user experience.
         </p>
 
         <h2>Information We Collect</h2>
         <ul>
           <li>Analytics on App activity (e.g. screens viewed, app opens)</li>
-          <li>Analytics on Podcast metadata (e.g. podcast title, podcast author)</li>
+          <li>Analytics on podcast, audiobook, topic, and feature metadata (e.g. content type, source screen, result counts, playback actions, and feature usage)</li>
           <li>Analytics on Technical metadata (e.g. app version, platform, device/app identifiers provided by analytics SDKs)</li>
           <li>Anonymous app identifiers we generate to operate backend features (for example, an app-specific user ID and install ID)</li>
           <li>Notification-related device metadata if notifications are enabled (for example, push token, platform, app version, locale, and timezone)</li>
-          <li>Subscription sync data used to support notification features (for example, feed URLs, podcast titles, and notification preference status)</li>
+          <li>Subscription, topic, audiobook, like, and preference data used to support app features (for example, feed URLs, podcast titles, followed topics, saved audiobooks, like state, and notification preference status)</li>
+          <li>Search and discovery metadata, such as query length, filters, result counts, selected result type, and recent searches stored on your device</li>
+          <li>Performance and diagnostics data, such as startup timing, screen navigation timing, artwork cache behavior, feed refresh timing, timeout counts, and cache diagnostics</li>
           <li>Feedback and feature request message content that you choose to submit to us through the app</li>
         </ul>
 
         <h2>Information Stored On Your Device</h2>
         <ul>
           <li>Podcast subscriptions and settings</li>
+          <li>Followed topics, topic settings, and cached topic episode matches</li>
+          <li>Saved audiobooks, audiobook settings, chapter metadata, and audiobook progress</li>
+          <li>Liked episodes, liked podcasts, playlists, queue state, and recent searches</li>
           <li>Playback history and resume positions</li>
           <li>Cached episode metadata and artwork references</li>
           <li>Playlists and downloaded episode file paths</li>
-          <li>Downloaded podcast audio files when you choose to download episodes for offline playback</li>
+          <li>Downloaded podcast or audiobook audio files when you choose to download audio for offline playback</li>
         </ul>
 
         <h2>Information We Do Not Intentionally Collect in Analytics</h2>
         <ul>
           <li>Message content submitted in feedback text boxes</li>
           <li>Email addresses, phone numbers, passwords, auth tokens, or secrets in analytics event properties</li>
+          <li>Full search query text where query-length or result-count data is sufficient</li>
         </ul>
 
         <h2>How We Use Information</h2>
@@ -123,8 +130,10 @@
           <li>To understand feature usage and improve product decisions</li>
           <li>To diagnose bugs and improve reliability/performance</li>
           <li>To monitor app stability and lifecycle behavior</li>
+          <li>To provide podcast, audiobook, topic, library, playlist, queue, and playback features</li>
           <li>To register devices for new-episode notifications and deliver those notifications when enabled</li>
-          <li>To sync subscription state needed for backend notification features</li>
+          <li>To sync subscription, notification, like, topic, audiobook, and discovery state needed for backend-supported features</li>
+          <li>To extract and display podcast support links, social links, show notes, timestamps, and related metadata from public feeds and show notes</li>
           <li>To receive, review, and respond to feedback and feature requests you send us</li>
         </ul>
 
@@ -136,10 +145,21 @@
         </p>
         <ul>
           <li><strong>PostHog</strong> for product analytics</li>
-          <li><strong>Supabase</strong> for backend storage and sync related to notifications and feedback</li>
+          <li><strong>Supabase</strong> for backend storage, sync, edge functions, likes, notifications, topic/audiobook metadata, social-link metadata, diagnostics, and feedback workflows</li>
           <li><strong>Firebase Cloud Messaging</strong> for push notification delivery</li>
           <li><strong>Resend</strong> for forwarding feedback and feature request emails to support</li>
         </ul>
+
+        <h2>Third-Party Content Sources And Links</h2>
+        <p>
+          Podisodic uses third-party content sources and directories such as
+          podcast RSS feeds, Podcast Index, Apple Podcasts/iTunes metadata, and
+          audiobook sources such as LibriVox or Internet Archive metadata where
+          available. Podcast websites, social links, support links, Apple
+          Podcasts links, Spotify links, Patreon links, email links, and other
+          external links may open third-party services that have their own
+          privacy practices.
+        </p>
 
         <h2>Push Notifications</h2>
         <p>
@@ -176,14 +196,28 @@
         <p>
           If you import or export subscriptions using OPML, the file is created
           or processed on your device and then handled through the system file
-          picker or share sheet you choose to use.
+          picker or share sheet you choose to use. Imported subscriptions become
+          normal app subscriptions and may be stored locally or synced to
+          backend features such as notifications if those features are enabled.
+        </p>
+
+        <h2>Sample Content And Test Profiles</h2>
+        <p>
+          If you choose to load sample content or a test profile, Podisodic may
+          add sample subscriptions, topics, audiobooks, playlists, queue items,
+          playback state, or cached metadata to your app so you can explore or
+          test features. These items are treated like other app data while they
+          remain in your library.
         </p>
 
         <h2>Your Choices</h2>
         <p>
           If you want to request deletion of data associated with your usage,
           contact us at:
-          <a href="mailto:help.podisodic@gmail.com">help.podisodic@gmail.com</a>
+          <a href="mailto:help.podisodic@gmail.com">help.podisodic@gmail.com</a>.
+          You can also remove local app data by deleting subscriptions, topics,
+          saved audiobooks, downloads, playlists, queue items, search history,
+          or the app itself from your device.
         </p>
 
         <h2>Children's Privacy</h2>
