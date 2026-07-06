@@ -79,7 +79,7 @@
       <section class="card">
         <span class="badge">Privacy Policy</span>
         <h1><span class="accent">Podisodic</span> Privacy Policy</h1>
-        <p class="meta"><strong>Effective date:</strong> May 16, 2026</p>
+        <p class="meta"><strong>Effective date:</strong> July 6, 2026</p>
         <p class="links">
           <a href="/podisodic-privacy/terms-of-service/">Terms of Service</a>
           ·
@@ -89,8 +89,9 @@
         <p>
           Podisodic collects and processes limited information to operate the
           app, deliver features such as playback, discovery, notifications,
-          feedback handling, and optional backend sync, and improve quality,
-          reliability, performance, and user experience.
+          listener tips, creator accounts, payouts, feedback handling, and
+          optional backend sync, and improve quality, reliability, performance,
+          and user experience.
         </p>
 
         <h2>Information We Collect</h2>
@@ -103,6 +104,10 @@
           <li>Subscription, topic, audiobook, like, and preference data used to support app features (for example, feed URLs, podcast titles, followed topics, saved audiobooks, like state, and notification preference status)</li>
           <li>Search and discovery metadata, such as query length, filters, result counts, selected result type, and recent searches stored on your device</li>
           <li>Performance and diagnostics data, such as startup timing, screen navigation timing, artwork cache behavior, feed refresh timing, timeout counts, and cache diagnostics</li>
+          <li>Listener tip activity, such as tip amount, currency, product ID, purchase platform, transaction or receipt identifiers, purchase status, refund or reversal status, show/feed, episode target, timestamps, and related verification metadata</li>
+          <li>Optional listener tip message content and optional listener display name, if you choose to provide them</li>
+          <li>Creator account information, such as creator email, display name, claimed podcast/feed, ownership verification status, payout setup status, and creator support activity</li>
+          <li>Creator payout information needed to send payments, including payout method details and masked account information; full bank account details are stored separately in encrypted form when provided</li>
           <li>Feedback and feature request message content that you choose to submit to us through the app</li>
         </ul>
 
@@ -121,6 +126,8 @@
         <h2>Information We Do Not Intentionally Collect in Analytics</h2>
         <ul>
           <li>Message content submitted in feedback text boxes</li>
+          <li>Tip message text or listener display names submitted with tips</li>
+          <li>Full bank account or routing numbers</li>
           <li>Email addresses, phone numbers, passwords, auth tokens, or secrets in analytics event properties</li>
           <li>Full search query text where query-length or result-count data is sufficient</li>
         </ul>
@@ -134,8 +141,41 @@
           <li>To register devices for new-episode notifications and deliver those notifications when enabled</li>
           <li>To sync subscription, notification, like, topic, audiobook, and discovery state needed for backend-supported features</li>
           <li>To extract and display podcast support links, social links, show notes, timestamps, and related metadata from public feeds and show notes</li>
+          <li>To verify listener tip purchases and record creator support activity</li>
+          <li>To calculate platform fees, Podisodic fees, creator net amounts, refunds, reversals, and payout eligibility</li>
+          <li>To operate creator account, ownership verification, dashboard, and payout workflows</li>
+          <li>To investigate failed purchases, duplicate charges, refunds, chargebacks, fraud, abuse, and other payment support issues</li>
           <li>To receive, review, and respond to feedback and feature requests you send us</li>
         </ul>
+
+        <h2>Listener Tips</h2>
+        <p>
+          If you send a tip to a creator, we process information needed to show
+          the tip in the app, verify the purchase with Apple or Google, record
+          the support activity for the creator, calculate fees and creator
+          earnings, and handle refunds, reversals, payment issues, or fraud
+          checks. Tips are optional one-time purchases and do not unlock premium
+          content, subscriptions, or additional access.
+        </p>
+
+        <h2>Optional Tip Messages And Names</h2>
+        <p>
+          When sending a tip, you may choose to add a short message or display
+          name. These fields are optional. If provided, they are stored with the
+          tip and shown to the creator in their creator dashboard or support
+          activity tools. They are not intended for public display in the app.
+        </p>
+
+        <h2>Creator Accounts And Payouts</h2>
+        <p>
+          Creators may create accounts, claim and verify ownership of podcast
+          feeds, view support activity, and add payout details. Payout
+          information is used to send creator earnings and manage payout
+          support. Full bank account and routing numbers, when provided, are
+          stored separately in encrypted form. Normal dashboard and status APIs
+          use masked account information, such as account type and last four
+          digits, rather than returning full bank details.
+        </p>
 
         <h2>Service Providers</h2>
         <p>
@@ -145,9 +185,10 @@
         </p>
         <ul>
           <li><strong>PostHog</strong> for product analytics</li>
-          <li><strong>Supabase</strong> for backend storage, sync, edge functions, likes, notifications, topic/audiobook metadata, social-link metadata, diagnostics, and feedback workflows</li>
+          <li><strong>Supabase</strong> for backend storage, sync, edge functions, likes, notifications, topic/audiobook metadata, social-link metadata, diagnostics, feedback workflows, creator accounts, ownership verification, listener tips, purchase verification, and payout workflows</li>
           <li><strong>Firebase Cloud Messaging</strong> for push notification delivery</li>
-          <li><strong>Resend</strong> for forwarding feedback and feature request emails to support</li>
+          <li><strong>Resend</strong> for forwarding feedback, feature requests, creator account emails, and support-related emails</li>
+          <li><strong>Apple App Store</strong> and <strong>Google Play</strong> for processing in-app purchases, purchase verification, refunds, and billing support</li>
         </ul>
 
         <h2>Third-Party Content Sources And Links</h2>
@@ -182,7 +223,9 @@
         <p>
           We do not sell personal data. Information may be processed by our
           service providers to operate notifications, analytics, backend sync,
-          and support workflows, and is not used for advertising.
+          listener tips, creator accounts, payout workflows, purchase
+          verification, refunds, fraud prevention, and support workflows, and is
+          not used for advertising.
         </p>
 
         <h2>Data Retention</h2>
@@ -218,6 +261,11 @@
           You can also remove local app data by deleting subscriptions, topics,
           saved audiobooks, downloads, playlists, queue items, search history,
           or the app itself from your device.
+        </p>
+        <p>
+          For creator account, tipping, or payout-related questions, you may
+          also contact us at:
+          <a href="mailto:creators@podisodic.com">creators@podisodic.com</a>
         </p>
 
         <h2>Children's Privacy</h2>
